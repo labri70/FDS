@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@import url(normalize.css);
+
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet);
+
+html, body, div, h1, h2, p{margin: 0; padding: 0;}
+
+html{font-size: 0.625em;}
+
+body{font: 1rem/1.5 'Spoqa Han Sans', 'Sans-serif';}
+
+h2{font-family: 'Roboto Slab', serif;}
+
+.reset-child-0 *{margin: 0;}
+
+
+/* **********************  레이아웃 시작  ******************* */
+.wrap{height: 900px;}
+.wrap:after{content:''; display: block; clear: both;}
+
+.header{
+	width: 9%; height: 100%; float: left; text-indent: -999px; overflow: hidden;
+	background: #000 url(../images/title.png) 50% 120px no-repeat;
+}
+
+.visual{
+	width:44%; height: 100%; float: left;
+}
+.visual img{width: 100%;}
+
+.contents{
+	width: 47%; height: 100%; float: left;
+}
+
+.mainContent{
+	width: 53%; float: left; 
+	padding: 3% 5% 3%;
+}
+.sideContent{
+	width: 31%; padding: 3%; float: left; 
+}
+
+.firstQnaArea{content:''; display: block; clear: both;}
+.firstQnaArea>div{width: 48%; float: left; }
+.firstQnaArea>div:first-of-type{margin-right: 2%;}
+
+.footer{clear: both;}
+
+/* **********************  개별영역 시작  ******************* */
+
+/* contents Area Start */
+.firstQnaArea h2, .sideContent h2{line-height: 1; margin-bottom: 5px;}
+.firstQnaArea p, .sideContent p{margin-bottom: 5px;}
+
+
+/* mainContent Area Start */
+.mainContent-head{margin-bottom: 10px;}
+.mainContent-head::after{
+	content:''; display: block; clear: both;
+}
+
+.mainContent .line img{width: 100%;}
+
+/* 이미지로 Dropcap 작성하기 */
+.photograhic{
+	width: 140px; height: 130px; float: left; position: relative;
+}
+.photograhic img:first-of-type{width: 100%; position: relative; left: -10px;}
+.photograhic img:last-of-type{width: 40%; position: absolute; left: 60px; top:30px;}
+.mainContent-head p{padding-top: 50px;}
+
+/* 텍스트로 Dropcap 작성하기 :
+.dropcap, .dropcap+p{margin-bottom: 15px;}
+.dropcap::first-letter{
+	float: left;
+	font-size: 8rem;
+	line-height: 0.3;
+	padding: 5px 10px 8px 0;
+}
+
+.dropcap.offset-15::first-letter{
+	margin-top: -15px; margin-bottom: 10px;
+}*/
+
+/* footer Area Start */
+.footer{
+	height: 70px; border-top: 1px solid #ccc; line-height: 70px;
+	text-indent: 20px;
+}
+
+.photograph{float: left; padding-left: 10px;}
+.catalgue{float: right; padding-right: 20px;}
