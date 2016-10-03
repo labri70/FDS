@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+nav ul, nav ol,
+.reset-list{
+	margin-top: 0; margin-bottom: 0; padding-left: 0; list-style: none;
+}
+
+nav a,
+.reset-list a{text-decoration: none;}
+
+/* a 상태 디자인 */
+nav a:link,
+.reset-list a:link { color: #0d2e23; }
+nav a:visited,
+.reset-list a:visited { color: #0d2e23; }
+nav a:hover,
+.reset-list a:hover { color: #1aa375; }
+nav a:active,
+.reset-list a:active { background: #affbdf; }
+nav a:focus,
+.reset-list a:focus { background: #affbdf; outline: none; }
+
+/* ************************************** */
+
+.external-list{margin-bottom: 50px;}
+.external-list a[href^="http://"][target="_blank"],
+.external-list a[href^="https://"][target="_blank"]{
+	padding-right: 1em;
+	background: url(../images/file-icon/external-link/ExternalLink.svg) right 50% no-repeat;
+	background-size: 13px 13px;
+}
+
+.external-list a[target="_blank"]:focus {
+  background-color: #3bf8f3;
+}
+
+
+/* ************************************** */
+
+.file-format-list{}
+.file-format-list li{margin-bottom: 5px;}
+.file-format-list a{padding-left: 30px;}
+.file-format-list a[href$=".psd"]{background: url(../images/file-icon/file-type-collection/svg/after-effects.svg) 0 50% no-repeat;}
+.file-format-list a[href$=".ai"]{background: url(../images/file-icon/file-type-collection/svg/ai.svg) 0 50% no-repeat;}
+.file-format-list a[href$=".ppt"]{background: url(../images/file-icon/file-type-collection/svg/avi.svg) 0 50% no-repeat;}
+.file-format-list a[href$=".html"]{background: url(../images/file-icon/file-type-collection/svg/css.svg) 0 50% no-repeat;}
+.file-format-list a[href$=".css"]{background: url(../images/file-icon/file-type-collection/svg/dbf.svg) 0 50% no-repeat;}
+
+.file-format-list a[href]:focus {
+  background-color: #3bf8f3;
+}
+
+
+/* ************************************** */
+
+.sns-list{list-style: none}
+
+.sns-list:after,
+.sns-list::after{
+	content:''; display: block; clear: both;
+}
+
+.sns-list li{
+	float: left; margin-right: 10px;
+	width: 32px; height: 32px; 
+}
+
+.sns-list a{
+	display: block; width: 100%; height: 100%;
+	text-decoration: none; overflow: hidden;
+	text-indent: -9999px;
+}
+
+.sns-list a[href*="icon1"]{background-image: url(../images/file-icon/SNS/Google-+.png);}
+.sns-list a[href*="icon2"]{background-image: url(../images/file-icon/SNS/facebook.png);}
+.sns-list a[href*="icon3"]{background-image: url(../images/file-icon/SNS/Twitter.png);}
+.sns-list a[href*="icon4"]{background-image: url(../images/file-icon/SNS/Flickr.png);}
+.sns-list a[href*="icon5"]{background-image: url(../images/file-icon/SNS/pinterest.png);}
+.sns-list a[href*="icon6"]{background-image: url(../images/file-icon/SNS/youtube.png);}
+
+.sns-list a:focus{
+	border: 3px solid #0cf;
+}
