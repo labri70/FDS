@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+html{font-size: 0.625em;}
+
+body{font-size: 1.4rem;}
+
+.readable-hidden{
+	width: 1px; height: 1px; 
+	overflow: hidden; padding:0; margin: -1px;
+}
+
+label.readable-hidden{ 
+	display: inline-block; margin-left: -4px;
+}
+
+
+/* Form Start */
+.login-wrap{
+	width: 280px; margin: auto; text-align: center;
+	padding: 100px 30px 20px; 
+}
+
+.login-wrap h2{
+	margin: 0 0 10px;
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-weight: normal;
+}
+
+.login-wrap fieldset{
+	border: 0;
+}
+
+.login-wrap label{
+	background-color: #fc0;
+}
+
+.login-wrap .user-id input , .login-wrap .user-pw input{
+	border: 0; width: 100%; height: 35px; 
+	font: bold 1.4rem/35px 'Old Standard TT', serif; 
+	font-style: italic;
+	border-radius:15px; 
+	text-indent: 10px; 
+	background-color: #f2f2f2;
+}
+.login-wrap .user-id input:focus,
+.login-wrap .user-pw input:focus{border: 	1px dotted #999}
+
+.user-pw{margin-bottom: 15px;}
+
+.btn-login{
+	width: 70%; height: 40px; border: 0;
+	font: bold 1.4rem/40px 'Noto Sans KR', sans-serif;
+	border-radius:20px; text-indent: 10px;
+	background-color: #1a71b3; color: #fff;	
+}
+.btn-login:hover{
+	background-color: #fc0; color: #333;
+}
+
+.login-wrap p{margin: 20px 0;}
+
+.sns-sign{margin-bottom: 30px;}
+.sns-sign a{
+	display: inline-block; width: 39%; height: 30px;
+	border-radius:15px; border: 2px solid #000;
+}
+
+.sns-sign a:focus{border: 1px dotted #999;}
+.sns-sign a:first-child{border-color: #214487; margin-right: 2%;}
+.sns-sign a:last-child{border-color: #14b0f7;}
+
+.sns-sign span{
+	text-indent:-9000px; overflow: hidden; display: inline-block; width: 1px;
+}
+.sns-sign i{
+	line-height: 30px;
+}
+
+.member{
+	width: 100%; border-top: 1px solid #e2e2e2;
+	padding: 15px 0;
+}
+.member a:first-child{margin-right: 20px;};

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>로그인 폼</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/formStyle.css">
+
+</head>
+<body>
+	<div class="login-wrap">
+
+		<h2 class="login-title">Log In</h2>
+
+		<form action="">
+			<fieldset>
+				<legend class="readable-hidden">회원 로그인 폼</legend>
+
+				<div class="user-id">
+					<label for="user_id" class="readable-hidden">아이디</label>
+					<input type="text" name="id" id="user_id" placeholder="Login" required>
+				</div>
+				<div class="user-pw">
+					<label for="user_pw" class="readable-hidden">비밀번호</label>
+					<input type="password" name="pw" id="user_pw" placeholder="Password" required>
+				</div>
+
+				<button type="submit" class="btn-login">로그인</button>
+			</fieldset>
+		</form>
+
+		<p>or conneted with</p>
+
+		<div class="sns-sign">
+			<a href="/" class="facebook-loginBtn">
+				<span>Face Book Login</span>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<a href="/" class="twitter-loginBtn">
+				<span>Twitter Login</span>
+				<i class="fa fa-twitter"" aria-hidden="true"></i>
+			</a>
+		</div>
+
+		<div class="member">
+			<a href="/" class="facebook-loginBtn">Sign up</a>
+			<a href="/" class="twitter-loginBtn">Fogot password?</a>
+		</div>
+		
+	</div>
+
+</body>
+</html>
