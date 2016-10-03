@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+/* ***************  레이아웃 구성 시작 *************** */
+.container-fluid{width: 100%;}
+.container{width: 768px; margin-left: auto; margin-right: auto;}
+
+
+/* *************** 개별영역 구성 시작 *************** */
+#wrap{padding-top: 70px;}
+
+
+/* header Start */
+.header .date-wrap>div{width: 30%; height: 20px; margin-bottom: 30px;}
+
+.header .date{
+	color: #1f489d; font:bold 1.3rem 'Roboto', sans-serif; float: left;
+}
+
+.header .date time{
+	color: #b8b8b8; font-weight: normal; margin-left: 50px; 
+}
+
+.header .author{
+	float: right; text-align: right;
+	font: italic 1.2rem 'Open Sans', sans-serif;
+}
+
+.header .author strong{
+	font-size: 1.1rem; font-style: normal; 
+}
+
+.header h1{
+	font: 5rem/55px 'Open Sans', sans-serif; letter-spacing: 0;
+	margin-bottom: 40px;
+}
+
+.header h1+p{
+	font: italic 1.7em/37px  'PT Serif', serif; color: #a1a1a1;
+	width: 80%; margin-bottom: 50px; position: relative;
+}
+
+.header h1+p::before{
+	content:''; display: block; width: 13px; height: 15px;
+	background: url(../images/bullet-icon.png) no-repeat 0 0; 
+	position: absolute; left: -45px; top: 10px;
+}
+
+/* visual Start */
+.visual img{width: 100%;}
+
+
+/* contnets - Section1 Start */
+
+.section1 h2{
+	font: italic 0.9em 'PT Serif', serif; 
+	color: #a1a1a1;
+	margin: 17px 0 30px;
+}
+
+.section1 h2+p{
+	font: 1.67rem/1.9em 'Roboto', sans-serif;
+	color: #939393; width: 77%; margin-bottom: 50px;
+}
+
+.section1 .slider{margin-bottom: 40px;}
+.section1 .slider ul{margin-bottom: 30px;}
+.section1 .slider li{	width: 25%; float: left;}
+.section1 .slider li img{width: 100%;}
+
+.slider .controler{
+	height: 70px; position: relative;
+}
+
+.slider .controler a{
+	display: inline-block; padding: 15px 25px; border: 1px solid #e2e2e2;
+	font-size: 2.3rem; font-weight: bold; color: #999;
+}
+.slider .pager{
+	position: absolute; width: 80px; height: 30px; 
+	font:bold 1.5rem 'Noto Sans KR', sans-serif; color: #999;
+	position: absolute; left: 170px; top: 13px;
+}
+.slider .pager span{
+	font-size: 0.6rem; font-weight: normal;
+	position: relative; top: -5px; left: 5px
+}
+
+
+/* contnets - Section2 Start */
+
+.section2 h2{
+	font:bold 2.8rem  'Nanum Gothic', sans-serif;
+	color: #2d2d2d;
+	margin: 17px 0 30px;
+}
+
+.section2 h2+p{
+	font: 1.67rem/1.9em 'Roboto', sans-serif;
+	color: #939393; width: 77%; margin-bottom: 50px;
+}
+
+.section2 .iterview{margin-bottom: 50px;}
+
+.section2 .iterview>p, .section2 .iterview>div{
+	float: left;
+}
+
+.section2 .iterview>p{
+	font: italic 1.8rem/1.7 'PT Serif', serif; width: 50%;
+}
+
+.section2 .iterview>div{
+	padding-left: 50px; width: 30%;
+}
+
+.section2 .video-box p{
+	font: 1.67rem/1.9em 'Roboto', sans-serif;
+	color: #939393; width: 77%; margin-bottom: 50px;
+}
+
+.section2 .video{
+	width: 600px; height: 320px; position: relative;
+}
+
+.section2 .video a{
+	display: block; width: 40px; height: 54px;
+	position: absolute; left: 50px; bottom: 50px;
+}
+
+.section2 .video div{
+	width: 50px; height: 20px; color: #e2e2e2;
+	position: absolute; right: 25px; top: 25px;
+}
+
+.section2 .video-box .video-caption{
+	text-align: center; padding: 20px; margin-bottom: 30px;
+	font: italic 1.2rem/1.7 'PT Serif', serif;
+}
+
+.section2 .sub-section{
+	width: 35%; float: left; padding-right: 5%;
+}
+
+.section2 .sub-section h3{
+	font:bold 1.4em 'Nanum Gothic', sans-serif;
+	margin-bottom: 30px;
+}
+
+.section2 .sub-section p{
+	font: 1.67rem/1.9em 'Roboto', sans-serif;
+	color: #939393; margin-bottom: 50px;
+}
+
+
+/* footer Start */
+.footer{margin-bottom: 100px;}
+.sns{margin-bottom: 50px;}
+.sns a{
+	display: inline-block; padding: 7px 20px;
+	border-radius:15px; color: #fff; 
+}
+
+.sns a span{font-size: 1.2rem; margin-left: 10px;}
+
+.sns a:nth-child(1){background-color: #3266a8;}
+.sns a:nth-child(2){background-color: #0db3f8;}
+.sns a:nth-child(3){background-color: #f27171;}
+.sns a:nth-child(4){background-color: #f13b3b;}
+
+.backBtn{font-size: 1.1rem;}
+.backBtn .fa{color: #999;}
+.backBtn span{font-weight: bold; color: #3266a8; }

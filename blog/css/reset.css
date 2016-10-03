@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 구글웹폰트 셋팅 :
+	1. 나눔고딕 웹폰트 -  font-family: 'Nanum Gothic', sans-serif;
+	2. Noto Sans KR -  font-family: 'Noto Sans KR', sans-serif;
+	3. Open Sans -  font-family: 'Open Sans', sans-serif;
+	4. Roboto -  font-family: 'Roboto', sans-serif;
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+
+
+/* 초기화 설정 */
+body, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, li, dt, dd,
+table, tr, th, td, caption, form, fieldset, p, hr, input, textarea,
+blockquote, address, header, hgroup, nav, section, article, figure,
+figcaption, aside, footer{ margin:0; padding:0 }
+
+
+/* hidden Element */
+.a11y, .hidden, legend{
+	 position: absolute; left: -9999em;
+}
+
+/* 건너뛰기 링크 */
+.a11y:focus{
+	background-color: #000; 
+	color: #fff !important;
+	left: 50%; top: 2px; 
+	margin-left: -5rem;
+	z-index: 100;
+	padding: 7px 2rem;
+}
+
+/* Document Default Style */
+html{font-size: 0.625em;}
+body{
+	font-size: 1.4rem; font-family: 'Noto Sans Regular', "맑은 고딕"; 
+	color: #181818;	line-height: 1.2;
+}
+
+
+/* 기본값 설정 */
+ul, ol{list-style:none;}
+table, tr, th, td{border:1px solid #000; border-collapse:collapse}
+fieldset, img{border: 0;}
+input, textarea{outline:none}
+input, label{vertical-align:middle}
+p{line-height:1.5}
+
+
+/* Link Style */
+a:link, a:visited, a:focus{text-decoration: none; color: inherit;}
+a:hover{color: #f00}
+a:focus{outline: 1px dotted #333;}
+
+
+/* Help-Class 설정 */
+.hidden{position:absolute; left:;}
+
+.ir{display:block; text-indent:-9000px; overflow:hidden;}
+
+.clearfix:after{
+	content:''; display:block; clear:both;
+}
