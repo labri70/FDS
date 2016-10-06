@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+/* Reset Set Up */
+html, body, table, tr, td, img, select, p{
+	margin: 0; padding: 0;
+}
+
+body{font-size: 62.5%; font-family: 'Nanum Gothic', sans-serif;}
+table{font-size: 1.4em;}
+
+.readable-hidden, .ally-hidden, .screen-off{
+	width: 1px; height: 1px; 
+	overflow: hidden; padding:0; margin: -1px;
+}
+
+/* 상품 리스트 시작 */
+.product_table, .product_table tr, .product_table td{
+	border: 1px solid #e2e2e2; border-collapse: collapse;
+	border-left-style: none; border-right-style: none;
+} 
+.product_table{width: 800px; margin: auto; margin-top: 50px;}
+.product_table tr{padding: 21px 0;}
+
+.product_table tr:nth-child(1) td:nth-child(1){
+	width: 150px;
+}
+.product_table tr:nth-child(2) td:nth-child(2){
+	width: 250px;
+}
+.product_table tr:nth-child(3) td:nth-child(3){
+	width: 120px;
+}
+.product_table tr:nth-child(4) td:nth-child(4){
+	width: 280px;
+}
+
+.product_table p{
+	width: 70%; margin-bottom: 10px;
+	font: bold 0.9em/17px 'Roboto', sans-serif;
+}
+.product_table  span{
+	font: italic 0.8em 'PT Serif', serif; color: #a1a1a1;
+}
+
+.product_table tr:nth-child(1) td:nth-child(3),
+.product_table tr:nth-child(2) td:nth-child(3),
+.product_table tr:nth-child(3) td:nth-child(3),
+.product_table tr:nth-child(4) td:nth-child(3){
+	font: bold 1.2em 'Roboto', sans-serif;
+}
+
+.product_table tr:nth-child(1) td:nth-child(3) span,
+.product_table tr:nth-child(2) td:nth-child(3) span,
+.product_table tr:nth-child(3) td:nth-child(3) span,
+.product_table tr:nth-child(4) td:nth-child(3) span{
+	display: block; 
+	font: bold 0.6em/17px 'Roboto', sans-serif; color: #888;
+	margin-top: 17px;
+}
+.product_table tr:nth-child(2) td:nth-child(3) span small{
+	position: relative; left: 10px; top: -4px;
+}
+.product_table tr:nth-child(2) td:nth-child(3){color: red;}
+
+
+.product_table td select{
+	display: block; margin-bottom: 7px; float: left;
+	border: 0; width: 80px; height: 27px; padding: 0 10px;
+	font: italic 1em/27px 'PT Serif', serif; color: #a1a1a1;
+	background-color: #e2e2e2; margin-right: 10px;
+	border-radius: 13px;
+}
+
+/* Test Selection Start */
+.product_table tr:nth-child(2) td:nth-child(4) select{
+	font: bold 1em/27px 'Roboto', serif; color: #333;
+}
+.product_table tr:nth-child(2) td:nth-child(4) option:not(:checked) { 
+	color: black; 
+}
+/* Test Selection End */
+
+.product_table td a{
+	display: block; width: 80px; height: 27px; padding: 0 10px;
+	font: 1em/27px 'Roboto', serif; color: #fff;
+	background-color: #0a348b; margin-right: 10px;
+	border-radius: 13px; float: left; text-align: center;
+	text-decoration: none;
+}
+
+.product_table tr:nth-child(1) td:nth-child(4) span,
+.product_table tr:nth-child(2) td:nth-child(4) span,
+.product_table tr:nth-child(3) td:nth-child(4) span,
+.product_table tr:nth-child(4) td:nth-child(4) span{
+	display: block; width: 100px; padding-top:40px;
+}
+
+.product_table td i{color: #d4d4d4; font-size: 1.3em;}
+.product_table tr:nth-child(2) td:nth-child(4) i{
+	color: #333; font-weight: bold;
+}
