@@ -59,8 +59,6 @@ a:focus{outline: 1px dotted #333;}
 
 
 /* Help-Class 설정 */
-.hidden{position:absolute; left:;}
-
 .ir{display:block; text-indent:-9000px; overflow:hidden;}
 
 .clearfix:after{

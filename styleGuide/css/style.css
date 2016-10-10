@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* 구글웹폰트 셋팅 :
+	1. 나눔고딕 웹폰트 -  font-family: 'Nanum Gothic', sans-serif;
+	2. Noto Sans KR -  font-family: 'Noto Sans KR', sans-serif;
+	3. Open Sans -  font-family: 'Open Sans', sans-serif;
+	4. Roboto -  font-family: 'Roboto', sans-serif;
+	5. Francois - font-family: 'Francois One', sans-serif;
+	6. Spoqa Han Sans - 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+@import url(https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+
+/* Reset */
+html, body, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, li, dt, dd, 
+table, tr, th, td, caption, p{margin: 0; padding: 0;}
+
+.readable-hidden, .ally-hidden, .screen-off{
+	width: 1px; height: 1px; 
+	overflow: hidden; padding:0; margin: -1px;
+}
+
+
+/* Font Reset */
+body{
+	font-size: 0.625em;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	color: #181818;	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: 21px;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-weight: normal;
+}
+
+h1{ font-size: 5.463em; }
+h2{ font-size: 4.161em; }
+h3{ font-size: 3.169em; }
+h4{ font-size: 2.414em; }
+h5{ font-size: 1.838em; }
+h6{ font-size: 1.4em; }
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
+	font-size: 14px; font-weight: bold; color: #7171ef;
+}
+
+ul, ol, dl, table, p{
+	font-size: 1.4em;
+}
+
+
+/* ************ 레이아웃 구성 시작 ************** */
+body{
+	padding: 84px 0 ; 
+	background: url(../images/baseline_21.png) 0 0 repeat;
+}
+
+.wrap{width: 1600px; margin-left: auto; margin-right: auto;}
+
+.wrap>section{
+	float: left; margin: 0 160px 42px 0; height: 672px;
+}
+.wrap>section:nth-of-type(2n){margin-right: 0;}
+
+.typeBox, .listBox{width: 640px;}
+.colorBox, .tableBox{width: 800px;}
+
+
+/* ************ 영역별 구성 시작 ************** */
+
+/* 영역별 타이틀 영역 시작 */
+.wrap>section>h1{
+	font:bold 2.4em 'Francois One', sans-serif;
+	color: #7171ef; line-height: 20px; padding: 21px 0;
+	border-bottom: 1px solid #027bfc; margin-bottom: 42px;
+}
+.typeBox>h1 small{
+	font-size: 0.6em; margin-left: 20px; line-height: 0;	
+	position: relative; top: -3px;
+}
+
+.wrap>section>h2{
+ 	font:bold 2.4em 'Francois One', sans-serif;
+	color: #7171ef; line-height: 20px; padding: 21px 0;
+	border-bottom: 1px solid #027bfc; margin-bottom: 42px;
+}
+
+
+
+/* Type Graphy Area Start */
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
+	display: block; float: left; margin-right: 15px; 
+}
+
+.typeBox>div h1, .typeBox>div h1 span{height: 63px; line-height: 63px;}
+.typeBox>div h2, .typeBox>div h2 span{height: 63px; line-height: 63px;}
+.typeBox>div h3, .typeBox>div h3 span{height: 42px; line-height: 42px;}
+.typeBox>div h4, .typeBox>div h4 span{height: 42px; line-height: 42px;}
+.typeBox>div h5, .typeBox>div h5 span{height: 21px; line-height: 21px;}
+.typeBox>div h6, .typeBox>div h6 span{height: 21px; line-height: 21px;}
+
+.typeBox p{position: relative; padding-left: 80px; margin-bottom: 21px;}
+.typeBox p span{
+	position: absolute; left: 0; top: 0;
+	font:bold 1em 'Francois One', sans-serif;
+	color: #7171ef; 
+}
+
+
+/* Color Box Area Start */
+.colorBox ul::after{content: ''; display: block; clear: both;}
+.colorBox li{
+	width: 100px; height: 126px; margin: 0 32px 21px 0; float: left; list-style: none;
+}
+.colorBox li:nth-child(6n){margin-right: 0;}
+.colorBox li div{
+	width: 100px; height: 100px; text-align: center; margin-bottom: 5px;
+	font: bold 1em/100px 'Roboto', sans-serif; color: #fff;
+}
+.colorBox li p{font: 1em/21px 'Roboto', sans-serif; color: #888;}
+.colorBox li:nth-child(1) div{background-color: #787f94;}
+.colorBox li:nth-child(2) div{background-color: #7171ef;}
+.colorBox li:nth-child(3) div{background-color: #44cb83;}
+.colorBox li:nth-child(4) div{background-color: #63a2fc;}
+.colorBox li:nth-child(5) div{background-color: #ff5448;}
+.colorBox li:nth-child(6) div{background-color: #fcb409;}
+.colorBox li:nth-child(7) div{background-color: #333741;}
+.colorBox li:nth-child(8) div{background-color: #586077;}
+.colorBox li:nth-child(9) div{background-color: #787f94;}
+.colorBox li:nth-child(10) div{background-color: #bac2d0;}
+.colorBox li:nth-child(11) div{background-color: #d9e0e9;}
+.colorBox li:nth-child(12) div{background-color: #fff;}
+
+
+
+/* List Box Area Start */
+.listBox h2{
+	color: #333; font: bold 1.4em/21px 'Noto Sans KR', sans-serif; margin: 0;
+}
+
+.listBox dt h2{color: #44cb83;}
+
+.listBox li, .listBox dt, .listBox dd{
+	font: 0.8em/20px 'Nanum Gothic', sans-serif;
+}
+
+.unorder-list-group, .order-list-group{width: 160px; float: left;}
+.define-list-group{width: 320px; float: left;}
+
+.unorder-list-group ul, .order-list-group ol, .define-list-group dd{
+	margin-bottom: 21px; 
+}
+.unorder-list-group ul, .order-list-group ol, .define-list-group dl{padding-left: 20px;}
+
+.define-list-group dd{
+	font-size: 0.9em; line-height: 21px; padding-left: 30px; position: relative;
+}
+
+.define-list-group dd::before{
+	content: ''; display: block; width: 2px; height: 30px; 
+	position: absolute; left: 15px; top: 7px; background-color: #44cb83;
+}
+
+
+
+/* Table Box Area Start */
+.tableBox table, .tableBox tr, .tableBox th, .tableBox td{
+	border:1px solid #cfcfcf; border-collapse: collapse;
+	border-left-style: none; border-right-style: none;
+}
+
+.tableBox table {width: 100%;}
+.tableBox table th, .tableBox table td{
+	height: 41px; font:1em 'Nanum Gothic', sans-serif;
+}
+.tableBox table th{color: #63a2fc;}
+.tableBox table td{text-align: center;}
+
+.tableBox table:nth-of-type(1) tr td:first-child {
+	text-align: left; text-indent: 40px; font-weight: bold; color: #333;
+}
+.tableBox table:nth-of-type(2) tr:nth-child(1) td:first-child,
+.tableBox table:nth-of-type(2) tr:nth-child(3) td:first-child {
+	text-align: left; text-indent: 40px; font-weight: bold; color: #63a2fc;
+}
+
+.tableBox table:nth-of-type(1){margin-bottom: 84px;}
+.tableBox table:nth-of-type(1) tr:first-child{background-color: #f6f6f5;}
+.tableBox table:nth-of-type(2) tbody{
+	border-top:2px solid #222; border-bottom: 2px solid #222
+}
