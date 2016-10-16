@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="myApp">
+<head>	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>BASIC OF SCHOOL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/IE9.js"></script>
+	<![endif]-->
+
+</head>
+<body ng-controller="myCtrl">
+	
+	<!-- header Container Area Start -->
+	<div class="header-include-box"></div>
+	<!-- header Container End -->
+
+	<!-- Main Conents Markup -->
+	<section class="container gulp">
+						
+		<h1>Gulp <small>프론트엔드 개발 빌드 시스템</small></h1>
+
+		<p>웹 개발, 특히 프론트엔드 개발의 트렌드는 굉장히 빠르게 진행되고 있습니다. 다양한 기술, 테그닉이 만들어지고 그에 따라서 다양한 개발툴들이 개발되고 있습니다. 웹브라우즈에 로딩되기전에 소스의 문법을 검사하거나 SASS, Coffee-script 와 같은 컴파일이 필요한 언어나 프레임워크, 퍼포먼스를 위해서 이미지나 파일의 최적화를 도와주고 테스트 작업을 자동화를 도와줍니다. 많은 부분에서 자동화를 요구하게 되었고 점점 더 발전하여 프론트엔드 개발에서도 빌드과정(Build process)이 필요하게 되었으며 이를 맡아줄 빌드 시스템이 필요하게 되었습니다. 빌드과정은 크게 아래와 같은 테스크(task)로 이루어져 있습니다. 지금은 크게 Grunt 와 Gulp 가 사용되어지고 있습니다. Grunt 는 jQuery plugins 개발을 손쉽게 하려는 노력에서 개발되었으며 현재 많은 프론트엔드, Nodejs 프로젝트에서 사용중입니다. Gulp 의 경우 상대적으로 Grunt 에 비해서 발표된 기간은 짧지만 빠르게 성장하는 프로젝트입니다.</p>
+
+		<div class="video-container">
+			<div><ng-youtube-embed url="gulp1" width="100%"></ng-youtube-embed></div>
+			<div><ng-youtube-embed url="gulp2" width="100%"></ng-youtube-embed></div>
+			<div><ng-youtube-embed url="gulp3" width="100%"></ng-youtube-embed></div>
+			<div><ng-youtube-embed url="gulp4" width="100%"></ng-youtube-embed></div>
+		</div>
+
+	</section>
+
+	<!-- footer Container Area Start -->
+	<div class="footer-include-box"></div>
+	<!-- footer Container End -->
+
+	<!-- 라이브러리 호출 -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+
+	<!-- AngularJS 호출 -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/youtube/ng-youtube-embed.min.js"></script>
+	<script src="js/youtube/app.js"></script>	
+
+	<script src="js/main.js"></script>	
+
+</body>
+</html>

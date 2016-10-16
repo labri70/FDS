@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="myApp">
+<head>	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>BASIC OF SCHOOL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/IE9.js"></script>
+	<![endif]-->
+
+</head>
+<body ng-controller="myCtrl">
+	
+	<!-- header Container Area Start -->
+	<div class="header-include-box"></div>
+	<!-- header Container End -->
+
+	<!-- Main Conents Markup -->
+	<section class="container infor">
+		
+		<h1>베이직 스쿨! <small>초보 프론트개발자를 위한 학습 동영상 스쿨</small></h1>
+
+		<p>베이직스쿨은 초보 프론트 개발자들을 위해 기본적인 프론트 개발을 위한 학습에 도움이 되는 동영상들을 한 곳에 모아,공부할 수 있는 공간을 제공하고자 만들어진 학습사이트입니다. 모든 서비스는 무료이며, 기존에 한국어 강좌들이 많지 않아서 유튜브에서 찾은 자료들로 제공되며 제가 한번 경험해본 영상자료들로만 추천해서 제공된 서비스입니다!</p>
+	
+
+		<!-- Sublime video Listitem Area Stat  -->
+		<section class="sublime">
+
+			<h1>Sublime Text <small>프론트개발자를 위한 테스트 전문 에디터</small></h1>
+
+			<p>서브라임 텍스트는 가볍고 확장성이 좋은 편집기로서, 국내뿐 아니라 외국에서도 많은 개발자들이 사용하고 있는 툴이다. 기본적으로 하드코딩을 염두에 두고 개발되었는데 여러가지 플러그인들이 붙으면서 그 편의성이 날로 좋아지고 있다. 기본적으로 제공되는 Monokai 테마도 인기가 좋으며, OS X 및 Windows, Linux를 모두 지원한다.</p>
+			
+			<div class="video-container">
+				<div><ng-youtube-embed url="sublime1" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime2" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime3" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime4" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime5" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime6" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime7" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime8" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime9" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime10" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime11" width="100%"></ng-youtube-embed></div>
+				<div><ng-youtube-embed url="sublime12" width="100%"></ng-youtube-embed></div>
+			</div>
+
+		</section>
+
+	</section>
+
+	<!-- footer Container Area Start -->
+	<div class="footer-include-box"></div>
+	<!-- footer Container End -->
+
+	<!-- 라이브러리 호출 -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+
+	<!-- AngularJS 호출 -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/youtube/ng-youtube-embed.min.js"></script>
+	<script src="js/youtube/app.js"></script>	
+
+	<script src="js/main.js"></script>	
+
+</body>
+</html>

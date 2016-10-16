@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+@import url(normalize.css);
+@import url(reset.css);
+
+/* ***************** Font Reset ***************** */
+body{
+	font-family: 'Nanum Gothic', sans-serif; margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Spoqa Han Sans', 'Sans-serif';
+	font-size: 200;
+	font-weight: normal;
+}
+
+ul, p{font-size: 1.4em;}
+
+
+/* **************** 레이아웃 구성 시작 *************** */
+
+.container{width: 1170px; margin-left: auto; margin-right: auto;}
+.container-fluid{width: 100%;}
+
+
+body{padding-top: 27px;}
+
+.navi{
+	height: 66px;
+	border-top: 2px solid #d78d6f; 
+	border-bottom: 2px solid rgba(0, 0, 0, .2);
+	background-color: #fff;
+	position: fixed; left: 0; top: 0;
+	z-index: 100;
+}
+
+.visual{
+	position: relative; height: 650px; overflow: hidden;
+}
+
+.infor>section{
+	padding-top: 84px; border-top: 1px solid #e2e2e2;
+}
+
+.infor>section .controller{margin: 84px 0;}
+
+
+
+/* **************** 개별영역 구성 시작 *************** */
+
+/* ******* 상단 네비게이션 영역 ******** */
+.navi .container{height: 70px;}
+.navi h1{
+	width: 89px; height: 36px; position: relative;  top: 17px;
+	overflow: hidden; float: left;
+}
+.navi h1 a{display: block; width: 89px; height: 36px;}
+.navi h1 a::after{
+	content:''; display: block; 
+	width: 89px; height: 36px; 
+	background: url(../images/logo.png) 0 0;
+	position: absolute; left: 0; top: 0;
+}
+
+.navi .gnb{width: 57%; height: 66px; float: right;}
+.navi .gnb li{float: left; margin-right: 10px;}
+.navi .gnb li a{
+	display: block; padding: 0 20px; height: 64px;
+	font: bold 1em/64px 'Nanum Gothic', sans-serif; 
+	color: #414141; position: relative;
+}
+.navi .gnb li a:hover{color: #c00;}
+.navi .gnb li a:hover::before{
+	content:''; display: block;
+	width: 80%; height: 3px;
+	position: absolute; left: 50%; bottom: 0; 
+	margin-left: -40%;
+	background-color: #ff8f1d;
+}
+
+
+/* ******* 메인 비주얼 비디오 영역 ******** */
+.visual h1{
+	font-size:4.8em; color:#ffc10b;
+	width: 80%; height: 50px; 
+	position: absolute; left: 21%; top: 280px;
+	text-shadow: 0 0 5px #000;
+}
+
+.visual p{
+	width: 600px; height: 50px; 
+	position: absolute; left: 22%; top: 380px;
+	font-size: 1.6em; color: #fff;
+	text-shadow: 0 0 3px  #000;
+}
+
+
+/* *********** 메인 콘텐츠 영역 ************ */
+
+/* ***** Infor Area Start  ***** */
+.infor, .flex, .sass, .jade, .angular, .bootstrap, .gulp{
+	padding-top: 63px;
+}
+.infor h1, .flex h1, .sass h1, .jade h1, .angular h1, .bootstrap h1, .gulp h1{
+	font-size: 30px; text-align: center; margin-bottom: 42px;
+}
+.infor h1 small, .flex h1 small, .sass h1 small, .jade h1 small, .angular h1 small, .bootstrap h1 small, .gulp h1 small{
+	display: block; font-size: 12px; margin-top: 10px; font-style: italic;
+}
+.infor p, .flex p, .sass p, .jade p, .angular p, .bootstrap p, .gulp p{
+	width: 70%; text-align: center; 
+	margin-left: auto; margin-right: auto; margin-bottom: 84px;
+}
+
+/* ***** Video Area Start  ***** */
+.video-container{width: 100%;}
+.video-container::after{
+	content: ''; display: block; clear: both;
+}
+.video-container>div{
+	width: 32%; margin: 0 20px 50px 0; float: left; height: 250px;
+}
+.video-container>div iframe{height: 250px;}
+.video-container>div:nth-of-type(3n){
+	margin-right: 0;
+}
+
+
+/* ***** Footer Area Start  ***** */
+.footer{height: 50px;}
+.footer p{
+	width: 100%; height: 50px; line-height: 50px; font-size: 12px; 
+	color: #fff; background-color: #333; text-align: center; letter-spacing: 1px
+}
+
+
+
+/* 미디어쿼리 선언 시작 */
+@media all and (max-width:1170px){
+	.container{width: 992px;}
+
+	/* 상단 네비게이션 영역 */
+	.navi .gnb{width: 65%;}
+
+	/* 메인비주얼 영역 */
+	.visual h1{
+		font-size:4.8em; 
+		position: absolute; left: 10%; top: 280px;
+	}
+	.visual p{
+		font-size: 1.6em; width: 80%;
+		position: absolute; left: 10%; top: 380px;		
+	}
+
+	/* 메인콘텐츠 영역 */
+	.infor p, .flex p, .sass p, .jade p, .angular p, .bootstrap p, .gulp p{
+		width: 85%;
+	}
+	.video-container>div{
+		width: 31.5%; margin: 0 25px 50px 0; 
+	}
+
+}
+
+@media all and (max-width:992px){
+	.container{width: 768px;}
+
+	/* 상단 네비게이션 영역 */
+	.navi .gnb{width: 85%;}
+
+	/* 메인비주얼 영역 */
+	.visual{height: 450px;}
+	.visual h1{
+		font-size:3.3em; 
+		top: 190px;
+	}
+	.visual p{
+		font-size: 1.6em; 
+		top: 260px;		
+	}
+
+	/* 메인콘텐츠 영역 */
+	.infor p, .flex p, .sass p, .jade p, .angular p, .bootstrap p, .gulp p{
+		width: 94%;
+	}
+	.video-container>div{
+		width: 45%; margin: 0 20px 50px 0; padding-left: 2%;
+	}
+	.video-container>div:nth-of-type(2n){
+		margin-right: 0;
+	}
+	.video-container>div:nth-of-type(3n){
+		margin-right: 20px;
+	}
+
+}
+
+@media all and (max-width:768px){
+
+	.container{width: 100%}
+
+	/* 상단 네비게이션 영역 */
+	body{padding-top: 100px;}
+	.navi{height: 120px;}
+	
+	.navi h1{
+		width: 89px; height: 36px; margin-bottom: 35px;
+		position: relative; left: 50%;  top: 17px; margin-left: -44px;
+		overflow: hidden; float: none;
+	}	
+
+	.navi .gnb{width: 90%; float: none; margin: auto;}
+	.navi .gnb ul{width: 100%;}
+	.navi .gnb ul::after{
+		content:''; display: block; clear: both;
+	}
+	.navi .gnb li{width: 13%; margin-right: 5px}
+	.navi .gnb li a{
+		padding:0; width: 100%; height: 25px; 
+		border: 1px solid #d44512; line-height: 25px; text-align: center;
+		font-size: 0.8em;
+	}
+	.navi .gnb li a:hover{color: #fff; background-color: #d44512;}
+	.navi .gnb li a:hover::before{
+		display: none;
+	}
+
+
+	/* 메인비주얼 영역 */
+	.visual{height: 450px;}
+	.visual h1{
+		font-size: 2.5em;
+		top: 130px;
+	}
+	.visual p{
+		font-size: 1.4em;
+		top: 210px;		
+	}
+
+	/* 메인콘텐츠 영역 */
+	.infor p, .flex p, .sass p, .jade p, .angular p, .bootstrap p, .gulp p{
+		width: 85%;
+	}
+	.video-container>div{
+		width: 45%; margin: 0 20px 50px 0; padding-left: 2%;
+	}
+
+}
+
+
+@media all and (max-width:640px){
+
+	body{padding-top: 120px;}
+	
+	.visual{height: 250px;}
+
+	.visual h1, .visual p{
+		display: none;		
+	}
+	.video-container>div{
+		width: 95%; margin: 0 0 50px 0; padding-left: 2%; float: none;
+	}
+
+}
+
+@media all and (max-width:480px){
+
+	body{padding-top: 180px;}
+
+	.navi{height: 180px;}
+	.navi .gnb li{width: 31%; margin-right: 5px; margin-bottom: 5px;}	
+
+	.visual{height: 210px;}
+
+}
