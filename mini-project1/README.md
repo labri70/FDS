@@ -52,5 +52,4 @@
 
 ## 미니프로젝트 결과 사이트
 
-1. http://wdcafe.woobi.co.kr/mission/mini-project/
-2. http://wdcafe.woobi.co.kr/mission/mini-project1/
+* http://wdcafe.woobi.co.kr/mission/mini-project1/
