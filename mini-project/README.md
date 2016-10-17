@@ -15,11 +15,10 @@
 
 ## 사용 기법
 
-1. 미디어쿼리로 반응형 구현
+1. 원페이지 콘텐츠 슬라이드 (animatescroll 플러그인 적용)
 2. 메인 비주얼 풀스크린 비디오배경 처리 (covervid 플러그인 적용)
-3. 원페이지 콘텐츠 슬라이드 (animatescroll 플러그인 적용)
-4. 비디오 리스트목록 (AngularJS 적용 비디오 리스트목록 처리 적용)
-5. 제이쿼리를 이용한 페이지 로드 (jquery.load()) - 상단, 하단 영역 페이지 로드 처리
+3. 비디오 리스트목록 (AngularJS 적용 비디오 리스트목록 처리 적용)
+
 
 
 ## 메인 네비게이션 구성
@@ -48,3 +47,9 @@
 5. 앵귤러 JS 소개
 6. 부트스트랩 소개
 7. 걸프 소개
+
+
+## 미니프로젝트 결과 사이트
+
+1. http://wdcafe.woobi.co.kr/mission/mini-project/
+2. http://wdcafe.woobi.co.kr/mission/mini-project1/
